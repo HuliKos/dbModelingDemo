@@ -15,7 +15,7 @@ CREATE TABLE user_group (
     group_id INT NOT NULL REFERENCES groups(group_id),
 );
 
-CREATE TABLE posts (
+CREATE TABLE posts (`
     post_id SERIAL PRIMARY KEY,
     user_id INT NOT NULL REFERENCES users(user_id),
     group_id INT NOT NULL REFERENCES groups(group_id),
